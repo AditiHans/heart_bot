@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.DS_Store
+
+# Virtual environment
+chatbot/
+venv/
+.env/
+*.env
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Model and dataset files
+models/
+data/chroma/
+*.jsonl
+*.csv
+
+# Logs and checkpoints
+logs/
+checkpoints/
+*.log
+
+# HuggingFace cache
+.cache/
+transformers_cache/
+torch_cache/
+datasets/
+
+# Results
+results/*.png
+results/*.txt
+results/screens/
+
+# Mac system files
+.DS_Store
