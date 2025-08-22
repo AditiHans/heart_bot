@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: heart-rag-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn webapp.api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: VECTOR_BACKEND
+        value: QDRANT
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: COLLECTION_NAME
+        value: heart_faq
+      - key: MODEL_PATH
+        value: google/bio_clinicalbert
+      - key: TOP_K
+        value: "4"
+      - key: FETCH_K
+        value: "10"
+      - key: MODE
+        value: extractive
+      - key: CORS_ORIGINS
+        value: "*"

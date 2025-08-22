@@ -1,0 +1,13 @@
+transformers>=4.41.0
+datasets>=2.20.0
+accelerate>=0.33.0
+torch>=2.2.0
+evaluate>=0.4.1
+numpy>=1.26
+pandas>=2.2
+tqdm>=4.66
+scikit-learn>=1.5
+chromadb>=0.5.5
+sentence-transformers>=3.0.1
+uvicorn>=0.30
+fastapi>=0.111
