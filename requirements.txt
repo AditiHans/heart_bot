@@ -20,3 +20,4 @@ sentence-transformers==2.7.0
 qdrant-client==1.7.3
 python-dotenv
 numpy==1.26.4
+httpx
