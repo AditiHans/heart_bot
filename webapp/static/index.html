@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <title>Heartify — Heart Health Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="pulse">♥</span><div><strong>Heartify</strong><small>Heart Health Assistant</small></div></div>
+      <div class="status"><i id="statusDot"></i><span id="statusText">Checking…</span></div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="orb">♥</div>
+      <h1>How can I help with your heart health?</h1>
+      <p>Ask a question and I’ll search the available medical context to give you a helpful answer.</p>
+      <div class="chips">
+        <button>What are common heart disease symptoms?</button>
+        <button>How can I reduce heart disease risk?</button>
+        <button>What is a healthy blood pressure?</button>
+      </div>
+    </section>
+
+    <section class="chat" id="chat" aria-live="polite"></section>
+
+    <form class="composer" id="form">
+      <textarea id="input" rows="1" maxlength="2000" placeholder="Ask Heartify anything…" aria-label="Message"></textarea>
+      <button id="send" type="submit" aria-label="Send">➤</button>
+    </form>
+    <div class="foot"><span>For educational support only — not a substitute for professional medical care.</span><button id="clear">Clear chat</button></div>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
